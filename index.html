@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jevic Energies | Powering the Future</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Jevic Energies</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
+    <section class="hero">
+      <h2>Innovative Energy Solutions</h2>
+      <p>Powering Tomorrow, Today</p>
+      <a href="#services" class="btn">Our Services</a>
+    </section>
+  </header>
+
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <h2>About Jevic Energies</h2>
+      <p>At Jevic Energies, we deliver sustainable power solutions—empowering communities and businesses.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services section-padding">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card"><div class="icon"><i class="fas fa-solar-panel"></i></div><h3>Solar Energy</h3><p>Solar installations optimizing energy output.</p></div>
+        <div class="card"><div class="icon"><i class="fas fa-bolt"></i></div><h3>Power Systems</h3><p>Microgrids, UPS, and backup systems.</p></div>
+        <div class="card"><div class="icon"><i class="fas fa-tools"></i></div><h3>Installations</h3><p>Wiring for homes and businesses.</p></div>
+        <div class="card"><div class="icon"><i class="fas fa-battery-full"></i></div><h3>Backup</h3><p>Battery storage & gas/diesel backup.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section-padding">
+    <div class="container">
+      <h2>Our Projects</h2>
+      <div class="gallery">
+        <img src="assets/project1.jpg" alt="Project 1" class="lightbox-trigger">
+        <img src="assets/project2.jpg" alt="Project 2" class="lightbox-trigger">
+        <img src="assets/project3.jpg" alt="Project 3" class="lightbox-trigger">
+        <img src="assets/project4.jpg" alt="Project 4" class="lightbox-trigger">
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox-modal" class="lightbox-modal hidden">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="lightbox-img">
+  </div>
+
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
